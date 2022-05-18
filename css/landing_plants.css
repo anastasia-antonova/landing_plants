@@ -2,6 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap");
 html, body, divasfasf, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,6 +56,53 @@ table {
   border-spacing: 0;
 }
 
+.sopa-babuina {
+  width: 100%;
+  max-width: 1152px;
+  margin: auto;
+}
+
+.title-basics {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+
+.title-basics2 {
+  font-family: Nunito;
+  font-weight: 700;
+}
+
+.paragraph-basics {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+
+.links {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.83px;
+  color: #1A1A1A;
+  text-decoration: none;
+}
+
+.button {
+  width: 81px;
+  height: 42px;
+  background-color: #066F14;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 body header {
   max-width: 1152px;
   margin: 0 auto 50px;
@@ -61,16 +112,10 @@ body header {
   min-height: 50px;
 }
 body header h3 {
-  font-weight: 400;
+  font-family: "Nunito";
+  font-weight: 700;
   font-size: 24px;
-}
-body header .buttons button {
-  width: 81px;
-  height: 42px;
-  background-color: #066F14;
-  border-radius: 4px;
-  border: none;
-  color: white;
+  line-height: 32px;
 }
 body header .nav {
   width: 40%;
@@ -79,13 +124,15 @@ body header .nav ul {
   display: flex;
   justify-content: space-between;
 }
-body header .nav ul li {
-  line-height: 28px;
-}
 body .banner {
   margin: 0 74px 15px 144px;
   display: flex;
   justify-content: space-between;
+  background-image: url("../image/banner-image.png");
+  background-size: 475px;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-bottom: 100px;
 }
 body .banner .text-banner {
   position: relative;
@@ -104,11 +151,12 @@ body .banner .text-banner::after {
 body .banner .text-banner h1 {
   max-width: 548px;
   font-size: 72px;
-  font-weight: 600;
+  font-family: Nunito;
+  font-weight: 700;
   line-height: 92px;
   margin-bottom: 24px;
 }
-body .banner .text-banner p {
+body .banner .text-banner .marg {
   max-width: 504px;
   line-height: 25.6px;
   font-weight: 400;
@@ -121,6 +169,7 @@ body .banner .text-banner button {
   background-color: #066F14;
   border-radius: 4px;
   color: white;
+  font-family: "DM Sans";
   border: none;
   font-size: 18px;
   font-weight: 500;
@@ -130,6 +179,162 @@ body .banner .text-banner button {
 body .banner img {
   width: 557px;
   height: 719px;
+}
+body .banner .statistics {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+body .banner .statistics .card .number {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  color: #001B04;
+  margin-bottom: 10px;
+}
+body .banner .statistics .card .name {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1A1A1A;
+}
+body .collection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 128px;
+}
+body .collection .text-collection {
+  max-width: 389px;
+}
+body .collection .text-collection h2 {
+  font-size: 36px;
+  line-height: 49px;
+  color: #1A1A1A;
+  margin-bottom: 37px;
+}
+body .collection .text-collection p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #4A4A4A;
+}
+body .collection .right {
+  display: flex;
+}
+body .collection .right .image {
+  padding: 22px 28px;
+  margin-left: 24px;
+}
+body .collection .right .image img {
+  width: 163px;
+  height: 163px;
+}
+body .collection .right .bg-pink {
+  background-color: #F6EDE8;
+}
+body .collection .right .bg-blue {
+  background-color: #F0F1F6;
+}
+body .about-us {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 126px;
+}
+body .about-us .text-about-us {
+  max-width: 504px;
+}
+body .about-us .text-about-us .green {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #066F14;
+  margin-bottom: 12px;
+}
+body .about-us .text-about-us h2 {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 50px;
+  color: #1A1A1A;
+  margin-bottom: 24px;
+}
+body .about-us .text-about-us .title-basics {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4A4A4A;
+  margin-bottom: 16px;
+}
+body .about-us .text-about-us .hurd {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #4A4A4A;
+  margin-bottom: 36px;
+}
+body .about-us .text-about-us button {
+  width: 155px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+body .about-us .box-image {
+  width: 446px;
+  height: 440px;
+  background-color: #066F14;
+}
+body .about-us .box-image img {
+  width: 446px;
+  height: 440px;
+  margin-left: 70px;
+  margin-top: 40px;
+}
+body .best-product h2 {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 50px;
+  color: #1A1A1A;
+  text-align: center;
+  margin-bottom: 24px;
+}
+body .best-product .hgf {
+  display: flex;
+  justify-content: center;
+}
+body .best-product .hgf ul {
+  display: flex;
+  justify-content: space-between;
+}
+body .best-product .hgf ul li {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #4A4A4A;
+  margin-right: 24px;
+}
+body .best-product .hgf ul .active {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #066F14;
+  margin-right: 24px;
 }
 
 /*# sourceMappingURL=landing_plants.css.map */

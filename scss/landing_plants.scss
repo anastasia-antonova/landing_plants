@@ -1,4 +1,7 @@
 @import "reset";
+@import "general";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
 
 body {
   header {
@@ -11,18 +14,13 @@ body {
 
 
     h3{
-      font-weight: 400;
+      font-family: 'Nunito';
+      font-weight: 700;
       font-size: 24px;
+      line-height: 32px;
     }
     .buttons {
-      button {
-        width: 81px;
-        height: 42px;
-        background-color: #066F14;
-        border-radius: 4px;
-        border: none;
-        color: white;
-      }
+
     }
     .nav {
       width: 40%;
@@ -31,7 +29,9 @@ body {
         justify-content: space-between;
 
         li {
-          line-height: 28px;
+          a {
+
+          }
         }
       }
 
@@ -42,6 +42,11 @@ body {
     margin: 0 74px 15px 144px;
     display: flex;
     justify-content: space-between;
+    background-image: url("../image/banner-image.png");
+    background-size: 475px;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 100px;
 
     .text-banner {
       position: relative;
@@ -61,12 +66,13 @@ body {
       h1 {
         max-width: 548px;
         font-size: 72px;
-        font-weight: 600;
+        font-family: Nunito;
+        font-weight: 700;
         line-height: 92px;
         margin-bottom: 24px;
       }
 
-      p {
+      .marg {
         max-width: 504px;
         line-height: 25.6px;
         font-weight: 400;
@@ -81,6 +87,7 @@ body {
         background-color: #066F14;
         border-radius: 4px;
         color: white;
+        font-family: "DM Sans";
         border: none;
         font-size: 18px;
         font-weight: 500;
@@ -94,9 +101,185 @@ body {
       width: 557px;
       height: 719px;
 
+    }
 
+    .statistics {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+
+      .card{
+
+        .number {
+          font-family: 'Nunito';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 49px;
+          color: #001B04;
+          margin-bottom: 10px;
+        }
+
+        .name{
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+          color: #1A1A1A;
+        }
+      }
     }
 
 
+  }
+
+  .collection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 128px;
+
+    .text-collection {
+      max-width: 389px;
+
+      h2 {
+        font-size: 36px;
+        line-height: 49px;
+        color: #1A1A1A;
+        margin-bottom: 37px;
+      }
+      p{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        color: #4A4A4A;
+      }
+    }
+    .right {
+      display: flex;
+      .image {
+        padding: 22px 28px;
+        margin-left: 24px;
+
+        img{
+          width: 163px;
+          height: 163px;
+        }
+
+      }
+      .bg-pink {
+        background-color: #F6EDE8;
+      }
+      .bg-blue {
+        background-color: #F0F1F6;
+      }
+    }
+  }
+
+  .about-us {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 126px;
+
+    .text-about-us {
+      max-width: 504px;
+
+      .green {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #066F14;
+        margin-bottom: 12px;
+      }
+
+      h2{
+        font-style: normal;
+        font-size: 40px;
+        line-height: 50px;
+        color: #1A1A1A;
+        margin-bottom: 24px;
+      }
+
+      .title-basics {
+        font-style: normal;
+        font-size: 16px;
+        line-height: 160%;
+        color: #4A4A4A;
+        margin-bottom: 16px;
+      }
+
+      .hurd{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 160%;
+        color: #4A4A4A;
+        margin-bottom: 36px;
+      }
+
+      button {
+        width: 155px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+      }
+    }
+    .box-image {
+      width: 446px;
+      height: 440px;
+      background-color: #066F14;
+      img {
+        width: 446px;
+        height: 440px;
+        margin-left: 70px;
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .best-product {
+    h2 {
+      font-style: normal;
+      font-size: 40px;
+      line-height: 50px;
+      color: #1A1A1A;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .hgf {
+      display: flex;
+      justify-content: center;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          color: #4A4A4A;
+          margin-right: 24px;
+        }
+        .active{
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 23px;
+          color: #066F14;
+          margin-right: 24px;
+        }
+      }
+    }
   }
 }
