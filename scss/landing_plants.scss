@@ -95,6 +95,10 @@ body {
         line-height: 23.44px;
         cursor: pointer;
 
+        &:hover {
+          background-color: #c3ffcc;
+          color: #066F14;
+        }
       }
     }
 
@@ -230,6 +234,11 @@ body {
         line-height: 23px;
         color: #FFFFFF;
         margin-bottom: 16px;
+
+        &:hover {
+          background-color: #c3ffcc;
+          color: #066F14;
+        }
       }
     }
     .box-image {
@@ -348,6 +357,11 @@ body {
       margin: auto;
       margin-top: 40px;
       cursor: pointer;
+
+      &:hover {
+        background-color: #c3ffcc;
+        color: #066F14;
+      }
     }
   }
 
@@ -431,11 +445,8 @@ body {
           margin-right: 10px;
         }
       }
-
-
     }
   }
-
   .subscribe {
     display: flex;
     justify-content: space-between;
@@ -473,6 +484,11 @@ body {
           line-height: 18px;
           color: #FEFEFE;
           cursor: pointer;
+
+          &:hover {
+            background-color: #c3ffcc;
+            color: #066F14;
+          }
         }
       }
       h2 {
@@ -496,12 +512,23 @@ body {
 
     }
 
-    img{
-      width: 262px;
+    .image-subscribe{
+      min-width: 262px;
+      min-height: 320px;
+      position: relative;
+      margin-right: 24px;
 
+      &::after {
+        content: '';
+        width: 262px;
+        height: 356px;
+        position: absolute;
+        background-image: url("../image/klipartz 14.svg");
+        background-size: cover;
+        bottom: 0;
+      }
     }
   }
-
   .follow-us {
     min-height: 402px;
     display: flex;
@@ -531,36 +558,83 @@ body {
         margin-bottom: 40px;
       }
     }
-
     .img-follow-us {
       display: flex;
       justify-content: space-between;
-      img {
-        width: 231px;
-      }
+      .img {
+        min-width: 231px;
+        min-height: 241px;
+        cursor: pointer;
 
-      .img-link {
-        position: relative;
-        &::after {
-          content: '';
-          width: 50px;
-          height: 49px;
-          background-color: #00000057;
-          position: absolute;
+        &.f1 {
+          background-image: url("../image/img-follow1.svg");
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
+          &:hover {
+            a {
+              display: block;
+            }
+          }
+          a {
+            display: none;
+            background-color: #00000057;
+            width: 100%;
+            height: 100%;
+            background-image: url("../image/Instagram.svg");
+            background-size: 80px;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+          }
+        }
+        &.f2 {
+          background-image: url("../image/img-follow2.svg");
+          &:hover {
+            a {
+              display: block;
+            }
+          }
+        }
+        &.f3{
+          background-image: url("../image/img-follow3.svg");
+
+          &:hover {
+            a {
+              display: block;
+            }
+          }
+        }
+        &.f4{
+          background-image: url("../image/img-follow4.svg");
+
+          &:hover {
+            a {
+              display: block;
+            }
+          }
+        }
+        &.f5 {
+          background-image: url("../image/img-follow5.svg");
+
+          &:hover {
+            a {
+              display: block;
+            }
+          }
         }
       }
-
     }
   }
-
   footer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 112px;
 
    .left {
      max-width: 307px;
+     margin-bottom: 96px;
 
      h3 {
        margin-bottom: 24px;
@@ -573,6 +647,36 @@ body {
        font-size: 16px;
        line-height: 160%;
        color: #5A5A5A;
+       margin-bottom: 22px;
+     }
+
+     .social-icons {
+       display: flex;
+       justify-content: space-between;
+       max-width: 176px;
+
+       a {
+         display: block;
+         width: 48px;
+         height: 48px;
+         background-color: #EDFFDD;
+         background-size: 24px;
+         background-repeat: no-repeat;
+         background-position: center;
+
+       }
+       .facebook {
+         background-image: url("../image/facebbok.svg");
+         background-size: 12px 22px;
+       }
+       .twitter {
+         background-image: url("../image/twitter.svg");
+       }
+       .instagram {
+         background-image: url("../image/Instagram (filled).svg");
+       }
+
+
      }
 
    }
@@ -591,6 +695,10 @@ body {
            a {
              text-decoration:none;
              color: #5A5A5A;
+
+             &:hover {
+               color: #066F14;
+             }
            }
 
          }
@@ -609,6 +717,10 @@ body {
            a {
              text-decoration:none;
              color: #5A5A5A;
+
+             &:hover {
+               color: #066F14;
+             }
            }
 
          }
@@ -626,6 +738,10 @@ body {
            a {
              text-decoration:none;
              color: #5A5A5A;
+
+             &:hover {
+               color: #066F14;
+             }
            }
 
          }
