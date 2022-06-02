@@ -17,20 +17,35 @@ body {
       font-family: 'Nunito';
       font-weight: 700;
       font-size: 24px;
-      line-height: 32px;
+      line-height: 32.74px;
+      margin-top: 6px;
     }
     .buttons {
 
+      .button {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+        margin-left: 48px;
+      }
+
     }
     .nav {
+      display: flex;
+      align-items: center;
       width: 40%;
+      margin-left: 206px;
+      padding-bottom: 6px;
       ul{
         display: flex;
         justify-content: space-between;
-
         li {
+          margin-right: 48px;
           a {
-
+            white-space: nowrap;
           }
         }
       }
@@ -40,13 +55,8 @@ body {
 
   .banner {
     min-height: 719px;
-    margin: 0 74px 15px 144px;
     display: flex;
     justify-content: space-between;
-    background-image: url("../image/banner-image.png");
-    background-size: 557px;
-    background-repeat: no-repeat;
-    background-position: 638px;
     margin-bottom: 100px;
 
     .text-banner {
@@ -55,13 +65,13 @@ body {
       &::after {
         content: '';
         background-image: url("../image/klipartz 7 .png");
-        width: 100%;
-        height: 100%;
+        width: 468px;
+        height: 493px;
         background-repeat: no-repeat;
+        background-size: 234px;
         position: absolute;
-        top: 327px;
-        left: 368px;
-        rotation: 30deg;
+        top: 308px;
+        left: 454px;
       }
 
       h1 {
@@ -102,9 +112,131 @@ body {
       }
     }
 
-    img {
+    .banner-image {
       width: 557px;
       height: 719px;
+      position: relative;
+      top: -52px;
+      left: 69px;
+
+      img {
+        width: 557px;
+        height: 719px;
+      }
+
+      button {
+        height: 53px;
+        background-color: #066F14B2;
+        border: none;
+        border-radius: 4px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: white;
+        position: absolute;
+        padding: 16px 32px;
+        white-space: nowrap;
+
+        i {
+          display: block;
+          width: 95px;
+          height: 4px;
+          left: 4px;
+          top: 1px;
+          position: relative;
+          background-color: #519A5A;
+
+
+          &::after, &::before {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+          }
+
+          &::after {
+            left: -5px;
+            top: -5px;
+            width: 6px;
+            height: 6px;
+            background-color: #F4C300;
+          }
+
+          &::before {
+            left: -4px;
+            top: -3px;
+            width: 16px;
+            height: 16px;
+            background-color: #FFFFFF8A;
+          }
+        }
+
+        &.one {
+          top: 71px;
+          left: 446px;
+
+          i {
+            top: -12px;
+            left: -147px;
+            width: 115px;
+
+            &::before {
+              top: -7px;
+              left: -7px;
+            }
+            &::after {
+              top: -2px;
+              left: -2px;
+            }
+          }
+        }
+
+        &.two {
+          top: 173px;
+          left: -42px;
+
+          i {
+            top: -13px;
+            left: 112px;
+            width: 95px;
+
+            &::before {
+              left: 101px;
+              top: -6px;
+            }
+            &::after {
+              top: -1px;
+              left: 106px;
+            }
+          }
+        }
+
+        &.three {
+         top: 553px;
+         left: 447px;
+
+          i {
+            top: -14px;
+            left: -103px;
+            background-color: #135D1D;
+            width: 72px;
+
+            &::after {
+              left: -5px;
+              top: 0;
+            }
+
+            &::before {
+              top: -5px;
+              left: -10px;
+              background-color: #FFFFFF4F;
+            }
+          }
+        }
+      }
+
+
     }
 
     .statistics {
@@ -132,6 +264,7 @@ body {
           line-height: 23px;
           color: #1A1A1A;
           margin-bottom: 11px;
+          text-align: center;
         }
       }
     }
@@ -151,13 +284,19 @@ body {
         color: #1A1A1A;
         margin-bottom: 37px;
       }
-      p{
+      a{
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 23px;
         color: #4A4A4A;
+
+        &::after {
+          content: " →";
+          top: 6px;
+          right: 8px;
+        }
       }
     }
     .right {
@@ -165,10 +304,24 @@ body {
       .image {
         padding: 22px 28px;
         margin-left: 24px;
+        max-width: 215px;
+        max-height: 207px;
+        border-radius: 4px;
+
+
+        &:first-child {
+          margin-left: 0;
+          padding: 22px 21px;
+        }
 
         img{
           width: 163px;
           height: 163px;
+          position: center;
+
+          &.first {
+            width: 173px;
+          }
         }
 
       }
@@ -182,6 +335,7 @@ body {
   }
 
   .about-us {
+    max-width: 1100px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 126px;
@@ -227,6 +381,7 @@ body {
 
       button {
         width: 155px;
+        height: 55px;
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 500;
@@ -280,6 +435,9 @@ body {
           line-height: 21px;
           color: #4A4A4A;
           margin-right: 24px;
+          &:last-child {
+            margin-right: 0;
+          }
         }
         .active{
           font-family: 'DM Sans';
@@ -300,16 +458,14 @@ body {
         min-width: 270px;
         min-height: 283px;
         background-color: #066F14;
-        p {
+        .name-product {
           font-family: 'Nunito';
           font-style: normal;
           font-weight: 600;
           font-size: 24px;
           line-height: 28px;
           color: #1A1A1A;
-          margin-top: 12px;
           margin-left: 32px;
-          margin-bottom: 11px;
         }
         .number {
           font-family: 'Nunito';
@@ -319,7 +475,7 @@ body {
           line-height: 19px;
           color: #1A1A1A;
           margin-left: 32px;
-          margin-top: 13px;
+          margin-top: 9px;
         }
         .star {
           margin-left: 32px;
@@ -327,19 +483,53 @@ body {
         img{
           display: block;
           margin: auto;
-          margin-top: 10px;
         }
         &.bg1{
           background-color: #EAF2E5;
+          img {
+            width: 140px;
+            height: 153px;
+            margin-top: 10px;
+          }
+          .name-product{
+            margin-top: 6px;
+            margin-bottom: 10px;
+          }
         }
         &.bg2 {
           background-color: #F0EBE6;
+          img {
+            width: 120px;
+            height: 153px;
+            margin-top: 3px;
+          }
+          .name-product{
+            margin-top: 12px;
+            margin-bottom: 10px;
+          }
         }
         &.bg3 {
         background-color: #E2ECE4;
+          img {
+            width: 118px;
+            height: 153px;
+            margin-top: 7px;
+          }
+          .name-product{
+            margin-top: 9px;
+            margin-bottom: 10px;
+          }
         }
         &.bg4 {
           background-color: #E7EEED;
+          img {
+            width: 160px;
+            height: 153px;
+          }
+          .name-product{
+            margin-top: 16px;
+            margin-bottom: 10px;
+          }
         }
       }
     }
@@ -415,7 +605,7 @@ body {
         height: 40px;
         position: absolute;
         top: 21px;
-        right: 23px;
+        right: 24px;
         background-image: url("../image/4.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -425,7 +615,8 @@ body {
         display: flex;
         margin-bottom: 16px;
         .name {
-          margin-bottom: 6px;
+          margin-top: 6px;
+          margin-bottom: 7px;
           font-family: 'Nunito';
           font-style: normal;
           font-weight: 600;
@@ -442,12 +633,16 @@ body {
           color: #D9D9D9;
         }
         img{
+          width: 60px;
+          height: 60px;
           margin-right: 10px;
         }
       }
     }
   }
+
   .subscribe {
+    max-width: 1040px;
     display: flex;
     justify-content: space-between;
     background-color: #DFFFE3;
@@ -523,12 +718,13 @@ body {
         width: 262px;
         height: 356px;
         position: absolute;
-        background-image: url("../image/klipartz 14.svg");
+        background-image: url("../image/klipartz 14 .png");
         background-size: cover;
         bottom: 0;
       }
     }
   }
+
   .follow-us {
     min-height: 402px;
     display: flex;
@@ -565,9 +761,10 @@ body {
         min-width: 231px;
         min-height: 241px;
         cursor: pointer;
+        background-size: 230px 241px;
 
         &.f1 {
-          background-image: url("../image/img-follow1.svg");
+          background-image: url("../image/img-follow1.png");
           background-size: cover;
           display: flex;
           justify-content: center;
@@ -591,7 +788,7 @@ body {
           }
         }
         &.f2 {
-          background-image: url("../image/img-follow2.svg");
+          background-image: url("../image/img-follow2.png");
           &:hover {
             a {
               display: block;
@@ -599,7 +796,7 @@ body {
           }
         }
         &.f3{
-          background-image: url("../image/img-follow3.svg");
+          background-image: url("../image/img-follow3.png");
 
           &:hover {
             a {
@@ -608,7 +805,7 @@ body {
           }
         }
         &.f4{
-          background-image: url("../image/img-follow4.svg");
+          background-image: url("../image/img-follow4.png");
 
           &:hover {
             a {
@@ -617,7 +814,7 @@ body {
           }
         }
         &.f5 {
-          background-image: url("../image/img-follow5.svg");
+          background-image: url("../image/img-follow5.png");
 
           &:hover {
             a {
@@ -628,16 +825,19 @@ body {
       }
     }
   }
+
   footer {
     display: flex;
     justify-content: space-between;
 
-   .left {
+    .left {
      max-width: 307px;
      margin-bottom: 96px;
+     margin-right: 201px;
 
      h3 {
        margin-bottom: 24px;
+       letter-spacing: 0.7px;
      }
 
      p{
@@ -663,93 +863,57 @@ body {
          background-size: 24px;
          background-repeat: no-repeat;
          background-position: center;
-
        }
+
        .facebook {
          background-image: url("../image/facebbok.svg");
          background-size: 12px 22px;
        }
+
        .twitter {
          background-image: url("../image/twitter.svg");
+         background-size: 22px;
        }
+
        .instagram {
          background-image: url("../image/Instagram (filled).svg");
        }
 
-
      }
-
    }
-   .right {
+    .right {
      display: flex;
      justify-content: space-between;
 
-     .navigation {
-       h3 {
-         margin-bottom: 24px;
-       }
+     .about-Us, .navigation, .help {
        margin-right: 128px;
-       ul {
-         li {
-           margin-bottom: 16px;
-           a {
-             text-decoration:none;
-             color: #5A5A5A;
-
-             &:hover {
-               color: #066F14;
-             }
-           }
-
-         }
-
-       }
-     }
-
-     .about-Us {
-       margin-right: 128px;
-       h3 {
+       h3{
          margin-bottom: 24px;
+         letter-spacing: 0.7px;
+         white-space: nowrap;
        }
+
        ul {
          li {
            margin-bottom: 16px;
            a {
              text-decoration:none;
              color: #5A5A5A;
+             white-space: nowrap;
 
              &:hover {
                color: #066F14;
              }
            }
-
          }
-
        }
-     }
 
-     .help {
-       h3 {
-         margin-bottom: 24px;
+       &:last-child {
+         margin-right: 0;
        }
-       ul {
-         li {
-           margin-bottom: 16px;
-           a {
-             text-decoration:none;
-             color: #5A5A5A;
 
-             &:hover {
-               color: #066F14;
-             }
-           }
-
-         }
-
-       }
      }
 
    }
-
   }
 }
